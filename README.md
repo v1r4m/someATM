@@ -3,6 +3,17 @@
 * written by eunjin(v1r4m)
 * contact : choyoung7789@gmail.com
 
+# Get started
+```
+git clone https://github.com/v1r4m/someATM
+cd someATM
+atmvenv\Scripts\activate
+(atmvenv)~ python manage.py makemigrations
+(atmvenv)~ python manage.py createsuperuser
+(atmvenv)~ python manage.py runserver
+```
+* your server is now running at `localhost:8000`
+* database is not included in github repository(only schema), I recommand you to test on [demo](https://eunjin1.pythonanywhere.com) server.
 ## feature / API명세서 
 | parameters | 의미 | meanings| 
 |------|---|---|
