@@ -1,10 +1,10 @@
 this is the main page. <br><br>
 
-when you insert your card to ATM, the sensor will read your card number, and dialects you to here : <strong>localhost:8000/insert/{cardnum}</strong><br>
+when you insert your card to ATM, the sensor will read your card number, and dialects you to here : <strong>https://eunjin1.pythonanywhere.com/insert/{cardnum}</strong><br>
 
 there, you can type your password and can be registered. your password is secured with SHA256 hash.<br>
 
-if you want to see your balance list, visit <strong>localhost:8000/balance/{cardnum}/{password}</strong><br>
+if you want to see your balance list, visit <strong>https://eunjin1.pythonanywhere.com/balance/{cardnum}/{password}</strong><br>
 
 if you want to deposit, visit <strong>https://eunjin1.pythonanywhere.com/deposit/{cardnum}/{password}/{amountofmoney}</strong><br>
 
@@ -26,6 +26,6 @@ we give you $1000 as an event. and you can set your userid/cardnum/password free
 If you are already our member, feel free to make more cash card here. <strong>https://eunjin1.pythonanywhere.com/newregister/{userId}/{cardNum}/{password}</strong> we give you $100 as an event. <br> 
 CAUTION : userid and cardnum SHOULD BE AN INTEGER. password can be any string.<br><br>
 
-since it is written in django, you can visit https://eunjin1.pythonanywhere.com/admin to see schema.<br>
+since it is written in django, you can visit https://eunjin1.pythonanywhere.com/admin to see some schema.<br>
 admin id : eunjin<br>
 admin pw : 1234
