@@ -12,8 +12,6 @@ class User(models.Model):
 class Card(models.Model):
     cardNumber = models.CharField(max_length=16)
     Balance = models.PositiveBigIntegerField()
-    Deposit = models.PositiveBigIntegerField()
-    Withdraw = models.PositiveBigIntegerField()
     isInserted = models.BooleanField(default=False)
     cardUser = models.ForeignKey(User, on_delete=models.CASCADE)
 

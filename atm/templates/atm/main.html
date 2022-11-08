@@ -1,16 +1,27 @@
-this is the main page. <br>
+this is the main page. <br><br>
 
-when you insert your card to ATM, the sensor will read your card number, and dialects you to here : localhost:8000/insert/{cardnum}<br>
+when you insert your card to ATM, the sensor will read your card number, and dialects you to here : <strong>localhost:8000/insert/{cardnum}</strong><br>
 
 there, you can type your password and can be registered. your password is secured with SHA256 hash.<br>
 
-if you want to see your balance list, visit localhost:8000/balance/{cardnum}/{password}<br>
+if you want to see your balance list, visit <strong>localhost:8000/balance/{cardnum}/{password}</strong><br>
 
-if you want to deposit, visit localhost:8000/Deposit/{cardnum}/{password}/{amountofmoney}<br>
+if you want to deposit, visit <strong>localhost:8000/deposit/{cardnum}/{password}/{amountofmoney}</strong><br>
 
-if you want to withdraw, visit localhost:8000/Withdraw/{cardnum}/{password}/{amountofmoney}. If you have fewer money than the amount of money you’d like to withdraw, you will be refused.<br>
+if you want to withdraw, visit <strong>localhost:8000/Withdraw/{cardnum}/{password}/{amountofmoney}</strong>. If you have fewer money than the amount of money you’d like to withdraw, you will be refused.<br>
 
-you have to keep your card Number and password on your url because in that way, others can’t see your deposit list, and can’t withdraw your money.<br>
+you have to keep your card Number and password on your url because in that way, others can’t see your deposit list, and can’t withdraw your money.<br><br>
+
+below is the sample ID that you can test.<br>
+cardnumber : 1234567812345678<br>
+userid : 3234 <br>
+password : 1234<br><br>
 
 we have no GUI. all the interaction will be held in URL.<br>
-One user can get many card. So it's basically one-to-many relationship.
+One user can get many card. So it's basically <strong>one-to-many relationship.</strong> <br><br>
+As a result, you can even make a new card as a one person.<br><br>
+
+Be our member of the BearRoboticsBank here. <strong>localhost:8000/newregister/{userId}/{cardNum}/{password}</strong> <br>
+we give you $1000 as an event. and you can set your userid/cardnum/password freely as long as it is not duplicated. <br>
+If you are already our member, feel free to make more cash card here. <strong>localhost:8000/newregister/{userId}/{cardNum}/{password}</strong> we give you $100 as an event. <br> 
+CAUTION : userid and cardnum SHOULD BE AN INTEGER. password can be any string.
