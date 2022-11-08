@@ -1,0 +1,16 @@
+this is the main page. <br>
+
+when you insert your card to ATM, the sensor will read your card number, and dialects you to here : localhost:8000/insert/{cardnum}<br>
+
+there, you can type your password and can be registered. your password is secured with SHA256 hash.<br>
+
+if you want to see your balance list, visit localhost:8000/balance/{cardnum}/{password}<br>
+
+if you want to deposit, visit localhost:8000/Deposit/{cardnum}/{password}/{amountofmoney}<br>
+
+if you want to withdraw, visit localhost:8000/Withdraw/{cardnum}/{password}/{amountofmoney}. If you have fewer money than the amount of money you’d like to withdraw, you will be refused.<br>
+
+you have to keep your card Number and password on your url because in that way, others can’t see your deposit list, and can’t withdraw your money.<br>
+
+we have no GUI. all the interaction will be held in URL.<br>
+One user can get many card. So it's basically one-to-many relationship.
