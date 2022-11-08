@@ -6,9 +6,9 @@ there, you can type your password and can be registered. your password is secure
 
 if you want to see your balance list, visit <strong>localhost:8000/balance/{cardnum}/{password}</strong><br>
 
-if you want to deposit, visit <strong>localhost:8000/deposit/{cardnum}/{password}/{amountofmoney}</strong><br>
+if you want to deposit, visit <strong>https://eunjin1.pythonanywhere.com/deposit/{cardnum}/{password}/{amountofmoney}</strong><br>
 
-if you want to withdraw, visit <strong>localhost:8000/Withdraw/{cardnum}/{password}/{amountofmoney}</strong>. If you have fewer money than the amount of money you’d like to withdraw, you will be refused.<br>
+if you want to withdraw, visit <strong>https://eunjin1.pythonanywhere.com/Withdraw/{cardnum}/{password}/{amountofmoney}</strong>. If you have fewer money than the amount of money you’d like to withdraw, you will be refused.<br>
 
 you have to keep your card Number and password on your url because in that way, others can’t see your deposit list, and can’t withdraw your money.<br><br>
 
@@ -21,7 +21,11 @@ we have no GUI. all the interaction will be held in URL.<br>
 One user can get many card. So it's basically <strong>one-to-many relationship.</strong> <br><br>
 As a result, you can even make a new card as a one person.<br><br>
 
-Be our member of the BearRoboticsBank here. <strong>localhost:8000/newregister/{userId}/{cardNum}/{password}</strong> <br>
+Be our member of the BearRoboticsBank here. <strong>https://eunjin1.pythonanywhere.com/newregister/{userId}/{cardNum}/{password}</strong> <br>
 we give you $1000 as an event. and you can set your userid/cardnum/password freely as long as it is not duplicated. <br>
-If you are already our member, feel free to make more cash card here. <strong>localhost:8000/newregister/{userId}/{cardNum}/{password}</strong> we give you $100 as an event. <br> 
-CAUTION : userid and cardnum SHOULD BE AN INTEGER. password can be any string.
+If you are already our member, feel free to make more cash card here. <strong>https://eunjin1.pythonanywhere.com/newregister/{userId}/{cardNum}/{password}</strong> we give you $100 as an event. <br> 
+CAUTION : userid and cardnum SHOULD BE AN INTEGER. password can be any string.<br><br>
+
+since it is written in django, you can visit https://eunjin1.pythonanywhere.com/admin to see schema.<br>
+admin id : eunjin<br>
+admin pw : 1234
